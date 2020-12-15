@@ -38,13 +38,10 @@ Majorly has three parts:
 I chose not to raise exception and exit the system because may be real-world scenario that is not feasible rather I recreate instance
 with with new params on same address. 
 * For car parking logics used **min-heap** data structure
-* Since the code is asked to be **production** ready I used logger in the entire package `(parking_system/__init__.py)`. For production env
-`LOG_LEVEL` is `INFO` and for pre-production/development as `DEBUG`. To change the env `export PARKING_SYSTEM_ENV=xxxx`. So in near future
-if we want to store our logs in production env this will help
+`LOG_LEVEL` is `INFO` and for pre-production/development as `DEBUG`. To change the env `export PARKING_SYSTEM_ENV=xxxx`. 
 * Created Vehicle base class and extends car from it so that the system can be scaled in future for other vehicle types as well
 * Kept checks on input command outside `parking_system` package. `helper.py` verifies the command validity and number of params for a particular command 
 and `main.py` gives the interface between input command and parking system package
-* No external library is used 
 
 
 
