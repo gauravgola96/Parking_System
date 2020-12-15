@@ -1,6 +1,4 @@
 # Parking Lot
-My Orginal Github : <br>
-https://github.com/gauravgola96
 ## Project Structure
 Majorly has three parts:
 1.  **config** : Env specific configurations with `COMMAND_DICT` in `common.py` which is a map of expected of commands
